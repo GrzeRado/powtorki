@@ -1,7 +1,6 @@
 // przyklad funkcji
 
 // function kitt(){
-
 //}
 
 

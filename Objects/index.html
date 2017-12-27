@@ -15,8 +15,29 @@
 
 <script>
 
+  //Constructor Pattern
+  function Fruit(name, color, shape) {
+    this.name = name;
+    this.color = color;
+    this.shape = shape;
+
+    this.describe = function () {
+        return 'A '+this.name+ ' is the color '+this.color+ ' and is the shape '+this.shape;
+    }
+  }
+var melon = new Fruit ('melon', 'green', 'round');
+
+console.log(melon.describe());
+
+
+  //var apple = new Fruit('apple', 'red', 'round');
+
+  //var melon = new Fruit('melon', 'green', 'round');
+
+//console.log(melon.shape);
+
     //Object Constructor, apple discription
-    var apple = {};
+   /* var apple = {};
     apple.color = 'red';
     apple.shape = 'round';
 
@@ -25,7 +46,7 @@
     };
 
     console.log(apple.discribe());
-
+*/
 
 
 //Object literal added adress and fullName function

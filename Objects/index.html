@@ -15,23 +15,16 @@
 
 <script>
 
-    //Object Constructor
-    var person = {
-        firstName: 'John',
-        lastName: 'Doe',
-        age: 25,
-        children: ['Dorothy', 'Nicole'],
-        address: {
-            street: '555 Baker str',
-            city: 'London',
-            state: 'NA'
-        },
-        fullName: function(){
-            return this.firstName + " " +this.lastName;
-        }
+    //Object Constructor, apple discription
+    var apple = {};
+    apple.color = 'red';
+    apple.shape = 'round';
+
+    apple.discribe = function(){
+        return 'An apple is the color '+this.color+' and is the shape'+this.shape;
     };
 
-    console.log(person.fullName());
+    console.log(apple.discribe());
 
 
 

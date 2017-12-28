@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JavaScript</title>
+
+
+</head>
+
+<body>
+<div class="header">
+    <h1 id="heading">Learning JavaScript</h1>
+    <p>Training, learninig</p>
+</div>
+
+//Add id=time on h1 below button to displayed data. Added onmouseout on the button to hidden data after cursor get of. Display data after mouse cursor moved.
+<div class="container">
+
+    <button onmouseout="clearDate()" onmouseover="showDate()">Show Date</button>
+    <h1 id="time"></h1>
+</div>
+
+<script>
+    function showDate() {
+    var time = document.getElementById('time');
+    time.innerHTML = Date();
+    }
+
+    function clearDate() {
+        var time = document.getElementById('time');
+        time.innerHTML = '';
+    }
+</script>
+
+
+</body>
+</html>

@@ -4,43 +4,59 @@
     <meta charset="UTF-8">
     <title>JavaScript</title>
 </head>
+<body id="body">
+<div class="header">
+    <h1 id="heading">Learning JavaScript</h1>
+    <p>Training, learninig</p>
+</div>
 
-<div>
-    <div class="header">
-        <h1>Learning JavaScript</h1>
-        <p>Training, learninig</p>
+</div class="container">
+<form method="post" action="something.php" name="myForm">
+    <div>
+        <label>First Name</label>
+        <input type="text" name="firstName" id="firstName"/>
     </div>
-
-    <form method="post" action="something.php" name="myForm">
-        <div>
-            <label>First Name</label>
-            <input type="text" name="firstName" id="firstName"/>
-        </div>
-        <br/>
-        <div>
-            <label>Last Name</label>
-            <input type="text" name="lastName" id="lastName"/>
-        </div>
-        <br/>
-        <div>
-            <label>Background</label>
-            ///Changed color of window list by onchange=changeBackground(this)
-            <select name="background" id="background" onchange="changeBackground(this)">
-                <option value="red">Red</option>
-                <option value="blue">Blue</option>
-                <option value="green">Green</option>
-            </select>
-        </div>
-        <br/>
-        <input type="submit" value="Submit"/>
-    </form>
+    <br/>
+    <div>
+        <label>Last Name</label>
+        <input type="text" name="lastName" id="lastName"/>
+    </div>
+    <br/>
+    <div>
+        <label>Background</label>
+        ///Changed color of window list by onchange=changeBackground(this)
+        <select name="background" id="background" onchange="changeBackground(this)">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+        </select>
+    </div>
+    <br/>
+    <input type="submit" value="Submit"/>
+</form>
 </div>
 
 <script>
-    //Show access to thr value
-    function changeBackground(x){
+    //Display h1 color: red, green, blue after choose color from list
+    function changeBackground(x) {
         console.log(x.value);
+        var heading = document.getElementById('heading');
+        heading.style.color = x.value;
     }
+
+    //Display blue background after choose color from list
+    /* function changeBackground(x){
+        console.log(x.value);
+    var body = document.getElementById('body');
+    document.body.style.backgroundColor = x.value;
+    }*/
+
+
+
+    //Show access to the value
+    /* function changeBackground(x){
+        console.log(x.value);
+    }*/
 
 
     //Show content of label background

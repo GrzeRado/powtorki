@@ -24,7 +24,8 @@
         <br/>
         <div>
             <label>Background</label>
-            <select name="background" id="background">
+            ///Changed color of window list by onchange=changeBackground(this)
+            <select name="background" id="background" onchange="changeBackground(this)">
                 <option value="red">Red</option>
                 <option value="blue">Blue</option>
                 <option value="green">Green</option>
@@ -36,7 +37,22 @@
 </div>
 
 <script>
+    //Show access to thr value
+    function changeBackground(x){
+        console.log(x.value);
+    }
 
+
+    //Show content of label background
+    /* function changeBackground(x){
+        console.log(x);
+    } */
+
+
+    //This is word Hello that displayed on console web
+    /* function changeBackground(x){
+    console.log('Hello');
+} */
 </script>
 
 </body>
